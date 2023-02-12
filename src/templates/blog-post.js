@@ -58,7 +58,7 @@ export const query = graphql`
         slug
       }
       frontmatter {
-        date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+        date(locale: "ko-KR", formatString: "DD [일] MM [월] YYYY [년]")
         description
         title
         tags

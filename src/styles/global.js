@@ -7,6 +7,22 @@ const GlobalStyles = createGlobalStyle`
    v2.0 | 20110126
    License: none (public domain)
   */
+
+  @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:800&subset=korean');
+  @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+  @font-face {
+    font-family: 'BMHANNAPro';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'D2Coding';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -102,7 +118,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     background-color: var(--bg);
     color: var(--primaryColor);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "D2Coding", "Roboto", sans-serif;
     font-size: 2rem;
     min-height: calc(100vh);
     -webkit-overflow-scrolling: touch;
@@ -147,6 +163,32 @@ const GlobalStyles = createGlobalStyle`
       animation: none;
       transition: none;
     }
+  }
+
+  // gus
+  nav li, .sidebar-2 .count, h1, h2, h3, h4 {
+    font-family: 'BMHANNAPro';
+  }
+  code:not(pre *) {
+    font-family: 'D2Coding';
+    border-radius: 5px;
+    background-color: rgba(255, 246, 228, 0.4);
+    animation: ulineonoff 4s infinite;
+  }
+  @keyframes ulineonoff{
+    0% {
+        text-decoration: rgba(255,0,0,0.6) wavy underline;
+    }
+    50% {
+        text-decoration: rgba(255,150,0,0.6) wavy underline;
+    }
+    100% {
+        text-decoration: rgba(255,0,0,0.6) wavy underline;
+    }
+  }
+  article img {
+    margin:auto auto;
+    max-width: 80%;
   }
 `
 export default GlobalStyles

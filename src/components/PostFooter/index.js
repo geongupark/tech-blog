@@ -14,7 +14,7 @@ const trackClickOnPay = (item) => {
 const PostFooter = () => {
   return (
     <>
-      <S.PostFooter>
+      {/* <S.PostFooter>
         <S.PostFooterContent>
           <S.Title>
             Gostou do conteúdo? Aceito um café <span
@@ -59,7 +59,7 @@ const PostFooter = () => {
           - LinkedIn: <a href="https://www.linkedin.com/in/felipefialho/" target="_blank" rel="noopener noreferrer" title="Ver Linkedin">@felipefialho</a>
           </p>
         </S.PostFooterContent>
-      </S.PostFooter>
+      </S.PostFooter> */}
     </>
   )
 }

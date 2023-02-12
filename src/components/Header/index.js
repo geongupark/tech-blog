@@ -23,11 +23,11 @@ const Header = ({ site: { author } }) => {
             direction="down"
             duration={1}
             to="/"
-            title="Voltar para home">
+            title="Gus home">
             <S.Brand>
               <Avatar />
               <R.LessThanSmallMobile>
-                <S.Title>FFialho</S.Title>
+                <S.Title>Gus</S.Title>
               </R.LessThanSmallMobile>
               <R.GreaterThanSmallMobile>
                 <S.Title>{author}</S.Title>

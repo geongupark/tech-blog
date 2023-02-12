@@ -34,10 +34,10 @@ const IndexPage = () => {
       <SEO lang="en" title='About me' description={site.siteMetadata.descriptionEn} />
       <GridTemplate>
         <ButtonLink
-          to="/"
+          to="/hi"
           title="View in english"
           onClick={() => trackLanguageClick()}>
-            Ver em português
+            한국어로 보기
         </ButtonLink>
 
         <Author language="en" fullText={true} />

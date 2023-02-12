@@ -159,15 +159,15 @@ const plugins = [
   {
     resolve: 'gatsby-plugin-i18n',
     options: {
-      langKeyDefault: 'pt-br',
+      langKeyDefault: 'ko-KR',
       useLangKeyLayout: false
     }
   },
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `Felipe Fialho`,
-      short_name: `felipefialho.com`,
+      name: `Geongu Park`,
+      short_name: `geongupark.com`,
       start_url: `/`,
       background_color: `#fcfcfc`,
       theme_color: `#111111`,
@@ -211,18 +211,18 @@ if (process.env.CONTEXT === 'production') {
 
 module.exports = {
   siteMetadata: {
-    title: `Felipe Fialho - Front-end Developer`,
-    author: `Felipe Fialho`,
-    position: 'Front-end Developer',
-    description: `Site pessoal e blog de um desenvolvedor Front-end apaixonado por criar coisas e compartilhar boas idéias.`,
-    descriptionEn: `Personal website of a Front End developer passionate about create things and sharing good ideas.`,
-    siteUrl: `https://felipefialho.com/`,
+    title: `Geongu Park - SW Engineer`,
+    author: `geongu.park`,
+    position: 'SW Engineer',
+    description: `보통의 기술 경험을 정리하는 블로그입니다.`,
+    descriptionEn: `A blog that summarizes common technical experiences.`,
+    siteUrl: `https://tech.botong.com/`,
     social: {
-      twitter: `felipefialho_`,
-      twitterLink: `https://twitter.com/felipefialho_`,
+      twitter: `geongupark`,
+      twitterLink: ``,
       linkedinLink: `https://www.linkedin.com/in/felipefialho/`,
-      githubLink: `https://github.com/felipefialho`,
-      youtubeLink: `https://www.youtube.com/c/FelipeFialhoDev`,
+      githubLink: `https://github.com/geongupark`,
+      youtubeLink: `https://www.youtube.com/c/geongupark`,
     },
   },
   plugins

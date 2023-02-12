@@ -28,16 +28,16 @@ const Pagination = ({
         rel="prev" 
         to={prevPage}
         onClick={() => trackClick(`previous page ${prevPage}`)}>
-        ← Anterior
+        ← 이전 페이지
       </ButtonLink>
     )}
-    <span>{currentPage} de {numPages}</span>
+    <span>{currentPage} / {numPages}</span>
     {!isLast && (
       <ButtonLink 
         rel="next" 
         to={nextPage}
         onClick={() => trackClick(`next page ${nextPage}`)}>
-        Próxima →
+        다음 페이지 →
       </ButtonLink>
     )}
   </S.Pagination>
