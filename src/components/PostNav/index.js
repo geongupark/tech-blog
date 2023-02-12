@@ -19,7 +19,7 @@ const PostNav = ({ next, previous }) => {
     <S.PostNav>
       {previous && (
         <S.NavItem>
-          <S.Title>Anterior</S.Title>
+          <S.Title>이전 글</S.Title>
           <BlogItem
             slug={previous.fields.slug}
             date={previous.frontmatter.date}
@@ -33,7 +33,7 @@ const PostNav = ({ next, previous }) => {
       )}
       {next && (
         <S.NavItem>
-          <S.Title>Próximo</S.Title>
+          <S.Title>다음 글</S.Title>
           <BlogItem
             slug={next.fields.slug}
             date={next.frontmatter.date}

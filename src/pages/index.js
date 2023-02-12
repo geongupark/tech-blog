@@ -27,7 +27,6 @@ const IndexPage = () => {
           onClick={() => trackLanguageClick()}>
           View in english
         </ButtonLink>
-
         <Author />
         <BlogList />
       </GridTemplate>

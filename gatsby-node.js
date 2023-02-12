@@ -18,7 +18,7 @@ exports.createPages = ({ graphql, actions }) => {
               slug
             }
             frontmatter {
-              date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
+              date(locale: "ko-KR", formatString: "DD[/]MM[/]YYYY")
               description
               title
               tags
@@ -30,7 +30,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
             frontmatter {
               title
-              date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
+              date(locale: "ko-KR", formatString: "DD[/]MM[/]YYYY")
             }
           }
           previous {
@@ -39,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
             frontmatter {
               title
-              date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
+              date(locale: "ko-KR", formatString: "DD[/]MM[/]YYYY")
             }
           }
         }

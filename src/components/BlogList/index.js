@@ -27,7 +27,7 @@ const blogListQuery = graphql`
             slug
           }
           frontmatter {
-            date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
+            date(locale: "ko-KR", formatString: "DD[/]MM[/]YYYY")
             description
             title
             tags
@@ -39,13 +39,23 @@ const blogListQuery = graphql`
   }
 `
 
-const BlogList = () => {
+const BlogList = ({language}) => {
   const allBlogList = useStaticQuery(blogListQuery)
   const list = allBlogList.allMarkdownRemark.edges
 
   return (
     <S.BlogList>
-      <S.Title>Últimas do blog</S.Title>
+      <S.Title>
+        {language === 'en' ? (
+          <>
+            The latest blog posts
+          </>
+        ) : (
+          <>
+            최신 블로그 글
+          </>
+        )}
+      </S.Title>
       <S.Nav>
         {list.map(({ node }, i) => (
           <BlogItem
@@ -61,7 +71,15 @@ const BlogList = () => {
       </S.Nav>
       <div style={{ textAlign: 'center' }}>
         <Button to='/blog/' onClick={() => trackClickAllPosts()}>
-          Ver todos os posts
+          {language === 'en' ? (
+            <>
+              View All Posts
+            </>
+          ) : (
+            <>
+              모든 포스트 보기
+            </>
+          )}
         </Button>
       </div >
     </S.BlogList >

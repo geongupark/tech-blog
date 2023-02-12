@@ -27,18 +27,18 @@ const PostHeader = ({
       )}
       <S.ButtonBack>
         <ButtonLink rel="prev" to="/blog/">
-          ← Voltar na listagem
+          ← 목록으로 돌아가기
         </ButtonLink>
       </S.ButtonBack>
       <DateTime>
         <span itemProp="datePublished">{date}</span>
         {timeToRead && (
-          <span> · Leitura de {timeToRead} min</span>
+          <span> · {timeToRead} 분 소요</span>
         )}
       </DateTime>
       <S.Title>{title}</S.Title>
       <S.Subtitle>{description}</S.Subtitle>
-      <S.Author>Felipe Fialho</S.Author>
+      <S.Author>geongu.park</S.Author>
       <Tags tags={tags} isLink={true} />
     </S.PostHeader>
   )

@@ -6,13 +6,14 @@ import Layout from 'components/Layout'
 import SEO from 'components/Seo'
 import GridTemplate from 'components/GridTemplate'
 import ButtonLink from 'components/ButtonLink'
+import BlogList from 'components/BlogList'
 import Author from 'components/Author'
 
 const trackLanguageClick = () => {
   ReactGA.event({
     category: 'Home',
     action: 'click',
-    label: `Home - Go to portuguese`
+    label: `Home - Go to korean`
   })
 }
 
@@ -38,10 +39,11 @@ const IndexPage = () => {
           to="/"
           title="View in english"
           onClick={() => trackLanguageClick()}>
-            Ver em português
+            한국어로 보기
         </ButtonLink>
 
         <Author language="en" />
+        <BlogList language="en" />
       </GridTemplate>
     </Layout>
   )
